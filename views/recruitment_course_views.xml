@@ -1,0 +1,82 @@
+<odoo>
+
+    <!-- Form -->
+    <record id="recruitment_course_form_view" model="ir.ui.view">
+        <field name="name">recruitment.course.form</field>
+        <field name="model">recruitment.course</field>
+        <field name="arch" type="xml">
+            <form string="Courses">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                        <field name="candidate_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree -->
+    <record id="recruitment_course_tree_view" model="ir.ui.view">
+        <field name="name">recruitment.course.tree</field>
+        <field name="model">recruitment.course</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Kanban -->
+    <record id="recruitment_course_kanban_view" model="ir.ui.view">
+        <field name="name">recruitment.course.kanban</field>
+        <field name="model">recruitment.course</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                            <table style="width:100%;">
+                                <tr t-if="record.name">
+                                    <td>
+                                        <span>Course:</span>
+                                    </td>
+                                    <td>
+                                        <field name="name"/>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <field name="date_from"/>
+                                    </td>
+                                    <td>
+                                        <field name="date_to"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="recruitment_course_action" model="ir.actions.act_window">
+        <field name="name">Courses</field>
+        <field name="res_model">recruitment.course</field>
+        <field name="view_mode">kanban,tree,form</field>
+    </record>
+
+    <!-- Menu items -->
+    <menuitem id="recruitment_course" parent="recruitment" name="Courses" sequence="2"
+              action="recruitment_course_action"/>
+
+</odoo>

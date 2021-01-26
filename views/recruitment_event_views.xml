@@ -1,0 +1,117 @@
+<odoo>
+
+    <!-- Form -->
+    <record id="recruitment_event_form_view" model="ir.ui.view">
+        <field name="name">recruitment.event.form</field>
+        <field name="model">recruitment.event</field>
+        <field name="arch" type="xml">
+            <form string="Events">
+                <header>
+                    <button name="action_done" type="object" string="Set as done" class="btn-primary"/>
+                </header>
+                <sheet>
+                    <widget name="web_ribbon" title="Done" attrs="{'invisible': [('is_done', '=', True)]}"/>
+                    <field name="is_done" invisible="1"/>
+                    <field name="partner_image" widget="image" class="oe_avatar"/>
+                    <group>
+                        <field name="partner_id"/>
+                        <field name="event_type"/>
+                        <field name="event_date"/>
+                        <field name="event_responsible"/>
+                        <field name="event_note"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree -->
+    <record id="recruitment_event_tree_view" model="ir.ui.view">
+        <field name="name">recruitment.event.tree</field>
+        <field name="model">recruitment.event</field>
+        <field name="arch" type="xml">
+            <tree string="Events" delete="0">
+                <field name="partner_id"/>
+                <field name="event_type"/>
+                <field name="event_date"/>
+                <field name="event_responsible"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Kanban -->
+    <record id="recruitment_event_kanban_view" model="ir.ui.view">
+        <field name="name">recruitment.event.kanban</field>
+        <field name="model">recruitment.event</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="event_date">
+                <field name="is_done"/>
+                <field name="partner_id"/>
+                <field name="event_type"/>
+                <field name="event_date"/>
+                <field name="event_responsible"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_card oe_kanban_global_click">
+                            <table style="width:100%;">
+                                <tr t-if="record.partner_id.raw_value">
+                                    <td>
+                                        <span>Candidate:</span>
+                                    </td>
+                                    <td>
+                                        <field name="partner_id"/>
+                                    </td>
+                                </tr>
+                                <tr t-if="record.event_type.raw_value">
+                                    <td>
+                                        <span>Type:</span>
+                                    </td>
+                                    <td>
+                                        <field name="event_type"/>
+                                    </td>
+                                </tr>
+                                <tr t-if="record.event_date.raw_value">
+                                    <td>
+                                        <span>Date:</span>
+                                    </td>
+                                    <td>
+                                        <field name="event_date"/>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="recruitment_event_search_view" model="ir.ui.view">
+        <field name="name">recruitment.event.search</field>
+        <field name="model">recruitment.event</field>
+        <field name="arch" type="xml">
+            <search string="Events">
+                <field name="partner_id"/>
+                <field name="event_responsible"/>
+                <field name="is_done"/>
+                <field name="event_type"/>
+                <filter name="done" string="Active events" domain="[('is_done', '=', False)]"/>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="recruitment_event_action" model="ir.actions.act_window">
+        <field name="name">Recruitment event</field>
+        <field name="res_model">recruitment.event</field>
+        <field name="view_mode">kanban,tree,form</field>
+        <field name="context">{"search_default_done":1}</field>
+
+    </record>
+
+    <!-- Menu items -->
+    <menuitem id="recruitment" name="Recruitment" sequence="9"/>
+    <menuitem id="recruitment_event" parent="recruitment" name="Events" sequence="1"
+              action="recruitment_event_action"/>
+
+</odoo>

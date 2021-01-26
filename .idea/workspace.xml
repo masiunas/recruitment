@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d566d105-7f45-4460-b9c7-69484c217d7b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../odoo" />
+  </component>
+  <component name="ProjectId" id="1nYf3cWLWSGfYZVlj6QURGBhd6j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/views" />
+      <recent name="$PROJECT_DIR$/models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Odoo" type="PythonConfigurationType" factoryName="Python">
+      <module name="recruitment" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../odoo" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../odoo/odoo-bin" />
+      <option name="PARAMETERS" value="--config=odoo.conf -d reqrut -u recruitment --dev=qweb,xml" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d566d105-7f45-4460-b9c7-69484c217d7b" name="Default Changelist" comment="" />
+      <created>1611571746699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611571746699</updated>
+      <workItem from="1611571748434" duration="11018000" />
+      <workItem from="1611643879719" duration="380000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="141" y="154" width="1084" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611585606216">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state x="141" y="154" width="1084" height="728" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611585606216" />
+    <state x="466" y="275" width="424" height="478" key="FileChooserDialogImpl" timestamp="1611579633175">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state x="466" y="275" width="424" height="478" key="FileChooserDialogImpl/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611579633175" />
+    <state width="1324" height="86" key="GridCell.Tab.0.bottom" timestamp="1611590391978">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state width="1324" height="86" key="GridCell.Tab.0.bottom/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611590391978" />
+    <state width="1324" height="86" key="GridCell.Tab.0.center" timestamp="1611590391977">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state width="1324" height="86" key="GridCell.Tab.0.center/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611590391977" />
+    <state width="1324" height="86" key="GridCell.Tab.0.left" timestamp="1611590391977">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state width="1324" height="86" key="GridCell.Tab.0.left/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611590391977" />
+    <state width="1324" height="86" key="GridCell.Tab.0.right" timestamp="1611590391977">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state width="1324" height="86" key="GridCell.Tab.0.right/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611590391977" />
+    <state x="360" y="253" width="646" height="528" key="find.popup" timestamp="1611585805657">
+      <screen x="0" y="154" width="1366" height="768" />
+    </state>
+    <state x="360" y="253" width="646" height="528" key="find.popup/0.154.1366.768/1366.0.1920.1080@0.154.1366.768" timestamp="1611585805657" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/recruitment$Odoo.coverage" NAME="Odoo Coverage Results" MODIFIED="1611590338891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../odoo" />
+  </component>
+</project>
